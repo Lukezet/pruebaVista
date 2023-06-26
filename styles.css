@@ -6,6 +6,7 @@
     font-family: 'Made Canva';
     src: url(./assets/fonts/MADE\ Canvas\ Regular\ PERSONAL\ USE.otf);
 }
+
 :root{
     --fontstack:'Bebas Neue','Made Canva';
 }
@@ -14,51 +15,58 @@ body, html {
     height: 100%;
     margin: 0;
     padding: 0;
+    box-sizing: inherit;
+    font-family: 'Poppins', sans-serif;
 }
 
+html {
+    overflow-x: hidden;
+    font-size: 62.5%;
+}
+.container-home{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(20,20,20,1) 0%, rgba(24,24,24,1) 17%, rgba(34,34,34,1) 35%, rgba(44,44,44,1) 52%, rgba(202,189,181,1) 52%);
+}
 nav {
     display: flex;
-    justify-content: space-between;
-    background-color: #8c705b;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 15px 50px;
+    width: 80%;
+    height: 6%;
+    justify-content: space-between;    
+    padding: 15px 10px;
     position: sticky;
-    top: 0;
+    background: linear-gradient(147deg, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.10) 100%);
+    backdrop-filter: blur(18.688133239746094px);
+    border: 0.4rem solid #ffffff;
+    top: 5%;
     z-index: 1;
 }
 
-nav::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 20;
-    right: 0;
-    bottom: 20;
-    backdrop-filter: blur(10px);
-    z-index: -1;
-}
-.logo{
+
+.brand-name{
     align-self: center;
 }
 
-.logo img {
-    height: 50px;
-    margin-right: 20px;
+.brand-name img {
+    height: 6rem;
+    color: #ffffff;
 }
 
 .menu {
     align-items: center;
     list-style: none;
-    margin-left: 100px;
     padding: 0;
     display: flex;
 }
 
 .menu li {
-    color:#ffffff;
-    font-family: 'Bebas Neue';
-    font-size: 1.5rem;
-    margin-inline: 10px;
+    font: 'Poppins';
+    font-weight:300;
+    font-size: 2.4rem;
+    margin-inline: 1rem;
+    padding-right: 4rem;
 }
 
 .menu li a {
@@ -70,21 +78,24 @@ nav::after {
 .search {
     display: flex;
     align-items: center;
-    margin-left: auto;
+    justify-items: start;
 }
 
 .search input {
+    display: none;
     padding: 8px;
     border: none;
     border-radius: 4px;
 }
 .search img{
-    display: none;
+    width: 4rem;
 }
 
 .search button {
+
     background-color: transparent;
     border: none;
+    cursor:pointer;
     margin-left: 8px;
 }
 .cart {
@@ -93,22 +104,34 @@ nav::after {
 }
 
 .cart img {
-    height: 24px;
+    height: 4rem;
 }
 
 .video-container {
-    position: relative;
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 85%;
+    height: 80%;
+
 }
 
 video {
     width: 100%;
     height: 100%;
+    border: 1rem solid  #ffffff;
+    border-radius: 8rem 8rem 0 0;
     object-fit: cover;
 }
+/* video source{
+    height: 100%;
+    width: 100%;
+} */
 
 .logo-container {
-    height: 500px;
+    height: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -119,3 +142,110 @@ video {
     max-width: 100%;
     max-height: 100%;
 }
+
+.middle-flag{
+    height: 18.9509rem;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.21) 10.16%, rgba(0, 0, 0, 0.00) 100%), #202020;
+    box-shadow: 0px 5.493019104003906px 5.493019104003906px 0px rgba(0, 0, 0, 0.25) inset;
+}
+.middle-flag img{
+    height:90px;
+    padding-right: 1rem;
+    display: flex;
+    align-items: center;
+}
+main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #CABDB5;
+}
+.models{
+    height: 100%;
+    width: 85%;
+    background: #ffffff;
+}
+.type-shoes{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 60rem;
+    border-radius: 0px 0px 68.663px 68.663px;
+    background: #B9A792;
+    box-shadow: 0px 5.493019104003906px 5.493019104003906px 0px rgba(0, 0, 0, 0.25) inset, 0px -10.986038208007812px 13.732549667358398px 0px rgba(0, 0, 0, 0.10) inset;
+}
+
+.card-typeshoes{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+.card-typeshoes img{
+    width: 90%;
+    height: 90%;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 0px 0px 7rem 7rem;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    box-shadow: 0px 5.493019104003906px 5.493019104003906px 0px rgba(0, 0, 0, 0.25) inset, 0px 5.493019104003906px 5.493019104003906px 0px rgba(0, 0, 0, 0.25);
+}
+.card-typeshoes .name-typeshoes{
+    position: absolute;
+    display: grid;
+    place-items: center;
+    top: 30%;
+    text-align: center;
+    width: 90%;
+    height: 12rem;
+    flex-shrink: 0;
+    font-size: 3.5rem;
+    font-weight: 600;
+    background: rgba(217, 217, 217, 0.69);
+
+}
+.talles {
+    margin-top: 5rem;
+    text-align: center;
+    color: #000;
+    font-size: 6.5916rem;
+    font-family: Poppins;
+    font-weight:400;
+    letter-spacing: 0.6592rem;
+}
+.talles ul {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.talles ul li{
+    width: 12.3593rem;
+    display: grid;
+    place-items: center;
+    height: 12.3593rem;
+    border-radius: 123.593px;
+    color: #000;
+    font-size: 3.2958rem;
+    font-family: Poppins;
+    font-weight: 300;
+    letter-spacing: 0;
+    background: #CABDB5;
+    transition: all .09s;
+    box-shadow: 0px 5.493019104003906px 5.493019104003906px 0px rgba(0, 0, 0, 0.25) inset;
+}
+.talles ul li:hover{
+    border: 0.3rem solid #000;
+    background: #8B5843;
+    cursor: pointer;
+    box-shadow: none;
+    transform: scale(1.01);
+    
+}   

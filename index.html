@@ -4,37 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>VideoPrueba</title>
 </head>
 <body>
-    <head>
-        <nav>
-            <div class="logo">
-                <img src="/assets/VIONZAletras.png" alt="Logo">
+    <header>
+        <div class="container-home"> 
+            <nav>
+                <div class="search">
+                    <button><img src="assets/search-normal.svg" alt="Buscar"></button>
+                    <input type="text" id="myField" name="myField" placeholder="¿Que estas buscando?">
+                </div>
+                <ul class="menu">
+                    <li><a href="#">Botas</a></li>
+                    <li><a href="#">Borcegos</a></li>
+                    <li class="brand-name"><img src="/assets/VIONZAletras.svg" alt="Logo"></li>
+                    <li><a href="#">Texanas</a></li>
+                    <li><a href="#">Zapatillas</a></li>
+                </ul>
+                <div class="cart">
+                    <img src="assets/bag-2.svg" alt="Carrito">
+                </div>
+            </nav>
+            <div class="video-container">
+                <video autoplay muted loop>
+                    <source src="assets/presentation.mp4" type="video/mp4">
+                </video>
+                <div class="logo-container">
+                    <img src="assets/VIONZAwhite.png" alt="Logo">
+                </div>
             </div>
-            <ul class="menu">
-                <li><a href="#">Botas</a></li>
-                <li><a href="#">Borcegos</a></li>
-                <li><a href="#">Texanas</a></li>
-                <li><a href="#">Zapatillas</a></li>
-            </ul>
-            <div class="search">
-                <input type="text" placeholder="¿Que estas buscando?">
-                <button><img src="assets/buscar.png" alt="Buscar"></button>
-            </div>
-            <div class="cart">
-                <img src="assets/carrito-de-compras.png" alt="Carrito">
-            </div>
-        </nav>
-    </head>
+        </div>
+        <section class="middle-flag">
+                <img src="assets/VIONZAsoloLogo.svg" alt="logo">
+                <img src="assets/VIONZAletras.svg" alt="VIONZA">
+                <img src="assets/VIONZAsoloLogo.svg" alt="logo">
+                <img src="assets/VIONZAletras.svg" alt="VIONZA">
+                <img src="assets/VIONZAsoloLogo.svg" alt="logo">
+                <img src="assets/VIONZAletras.svg" alt="VIONZA">
+        </section>
+    </header>
     <main>
-        <div class="video-container">
-            <video autoplay muted loop>
-                <source src="assets/presentation.mp4" type="video/mp4">
-            </video>
-            <div class="logo-container">
-                <img src="assets/VIONZAwhite.png" alt="Logo">
+        <div class="models">
+            <div class="type-shoes">
+                <div class="card-typeshoes">
+                    <div class="name-typeshoes">BORCEGOS</div>
+                    <img src="assets/shoes-pic/05.png" alt="logo">    
+                </div>
+                <div class="card-typeshoes">
+                    <div class="name-typeshoes">BOTAS</div>
+                    <img src="assets/shoes-pic/a7.png" alt="logo">    
+                </div>
+                <div class="card-typeshoes">
+                    <div class="name-typeshoes">ALTAS</div>
+                    <img src="assets/shoes-pic/z6.png" alt="logo">    
+                </div>
+                <div class="card-typeshoes">
+                    <div class="name-typeshoes">TEXANAS</div>
+                    <img src="assets/shoes-pic/z7.png" alt="logo">    
+                </div>
+            </div>
+            <div class="talles">
+                <div>ELIGE TU TALLE</div>
+                <ul>
+                    <li class="numero-talle">35</li>
+                    <li class="numero-talle">36</li>
+                    <li class="numero-talle">37</li>
+                    <li class="numero-talle">38</li>
+                    <li class="numero-talle">39</li>
+                    <li class="numero-talle">40</li>
+                    <li class="numero-talle">41</li>
+                </ul>
             </div>
         </div>
     </main>
