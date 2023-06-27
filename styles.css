@@ -220,6 +220,11 @@ main {
     font-weight:400;
     letter-spacing: 0.6592rem;
 }
+h2{
+    font-size: 6.5916rem;
+    font-weight:400;
+    letter-spacing: 0.6592rem;
+}
 .talles ul {
     margin-top: 5rem;
     display: flex;
