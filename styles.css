@@ -20,7 +20,7 @@ body, html {
 }
 
 html {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     font-size: 62.5%;
 }
 .container-home{
@@ -161,7 +161,7 @@ video {
     align-items: center;
 }
 main {
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -169,6 +169,8 @@ main {
 }
 .models{
     height: 100%;
+    display: flex;
+    flex-direction: column;
     width: 85%;
     background: #ffffff;
 }
@@ -212,6 +214,7 @@ main {
 
 }
 .talles {
+    height: 50rem;
     margin-top: 5rem;
     text-align: center;
     color: #000;
@@ -247,10 +250,102 @@ h2{
     box-shadow: 0px 5.493019104003906px 5.493019104003906px 0px rgba(0, 0, 0, 0.25) inset;
 }
 .talles ul li:hover{
-    border: 0.3rem solid #000;
-    background: #8B5843;
+    /* border: 0.3rem solid #000; */
+    background: #242424;
+    color: #ffffff;
     cursor: pointer;
     box-shadow: none;
     transform: scale(1.01);
     
-}   
+} 
+.shoes-grid{
+    width: 90%;
+    height: auto;
+    display: grid;
+    padding-left: 5%;
+    padding-right: 5%;
+    gap: 5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+} 
+.shoes{
+    position: relative;
+    border: 2.747px solid rgba(0, 0, 0, 0.10);
+    /* border-radius: 28px; */
+    width: 100%;
+    height: 72rem;
+    
+}
+.shoes img{
+    width: 100%;
+    /* border-radius: 25.3px 25.3px 0 0 ; */
+    object-fit: cover;
+}  
+.description-shoes{
+    font-size: 3.2958rem;
+    margin-left: 2rem;
+}
+.description-shoes em{
+    font-style: normal;
+    font-weight: 600;
+}
+.description-shoes .old-price{
+    font-style: normal;
+    text-decoration: line-through;
+    color:grey;
+}
+.discount{
+    position: absolute;
+    top:3rem;
+    left: 3rem;
+    display: grid;
+    place-items: center;
+    width: 6.38rem;
+    height: 6.38rem;
+    border-radius: 100%;
+    color: #ffffff;
+    background-color: #8B5843;
+    font-size: 1.8rem;
+    box-shadow: 0px 5.493019104003906px 5.493019104003906px 0px rgba(0, 0, 0, 0.50);
+}
+.shop-cart{
+    position: absolute;
+    bottom:11rem;
+    right: 3rem;
+    display: grid;
+    place-items: center;
+    width: 8.1339rem;
+    height: 8.1087rem;
+    border-radius: 100%;
+    border: none;
+    background-color: #ffffff;  
+}
+.shop-cart img{
+    width: 3.8rem;
+    height: 3.8rem;
+    padding: 1.3rem;
+    border-radius: 100%;
+    color: #ffffff;
+    background-color: #8B5843;
+    box-shadow: 0px 5.493019104003906px 5.493019104003906px 0px rgba(0, 0, 0, 0.50);
+}
+.shop-cart img:hover{
+    cursor: pointer;
+    background-color: #242424;
+}
+.add-shoes{
+    position: relative;
+}
+.plus{
+    bottom:1rem;
+    right: 1rem;
+    position:absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    color: #ffffff;
+    width: 1.8rem;
+    height: 1.8rem;
+    font-size: 1.9rem;
+    background-color: #000000;
+}
