@@ -81,7 +81,7 @@ nav {
     justify-items: start;
 }
 
-.search input {
+.search #myField {
     display: none;
     padding: 8px;
     border: none;
@@ -481,4 +481,74 @@ h2{
     position: absolute;
     width: 30.5883rem;
     height: auto;
+}
+footer{
+    height: auto;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.21) 10.16%, rgba(0, 0, 0, 0.00) 100%), #202020;
+}
+.final-info{
+    height: 69.89rem;
+    padding: 2%;
+    width: 96%;
+    display: grid;
+    gap:2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.final-info img{
+    padding-top: 3rem;
+    width: 33rem;
+    height: auto;
+}
+.final-info h4{
+    color: #FFF;
+    font-size: 32.958px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.296px;
+}
+.final-info ul{
+    padding: 0;
+}
+.final-info li{
+    color: #FFF;
+    font-size: 21.972px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2.197px;
+    padding-bottom: 5rem;
+    list-style: none;
+}
+.Newsletter p{
+    color: #FFF;
+    font-size: 21.972px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2.197px;
+}
+.Newsletter #email-Field {
+    display: block;
+    padding: 8px;
+    width: 410.603px;
+    height: 87.888px;
+    border: none;
+    border-radius: 4px;
+    border-radius: 13.733px;
+    background: #4E4E4E;
+    color: #FFF;
+    font-size: 21.972px;
+    box-shadow: 0px 5.493019104003906px 5.493019104003906px 0px rgba(0, 0, 0, 0.25) inset;
+}
+#email-Field::placeholder{
+    color: #FFF;
+    font-size: 21.972px;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2.197px;
 }
