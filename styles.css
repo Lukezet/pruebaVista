@@ -161,7 +161,7 @@ video {
     align-items: center;
 }
 main {
-    /* height: 100%; */
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -230,6 +230,7 @@ h2{
 }
 .talles ul {
     margin-top: 5rem;
+    padding: 0;
     display: flex;
     justify-content: space-evenly;
     list-style: none;
@@ -255,11 +256,12 @@ h2{
     color: #ffffff;
     cursor: pointer;
     box-shadow: none;
-    transform: scale(1.01);
+    transform: scale(1.1);
     
 } 
 .shoes-grid{
     width: 90%;
+    margin-bottom: 20rem;
     height: auto;
     display: grid;
     padding-left: 5%;
@@ -269,15 +271,23 @@ h2{
 } 
 .shoes{
     position: relative;
+    background-color: #ffffff;
     border: 2.747px solid rgba(0, 0, 0, 0.10);
     /* border-radius: 28px; */
     width: 100%;
-    height: 72rem;
-    
+    height: 72rem; 
+    transition: all .2s;   
+}
+.shoes:hover{
+    box-shadow: 0px 5.493019104003906px 5.493019104003906px 0px rgba(0, 0, 0, 0.50);
+    cursor:pointer;
+    border:none;
+    width: 99%;
+    transform: scale(1.1);
 }
 .shoes img{
     width: 100%;
-    /* border-radius: 25.3px 25.3px 0 0 ; */
+    border-radius: 0 0  2rem 2rem;
     object-fit: cover;
 }  
 .description-shoes{
@@ -290,8 +300,9 @@ h2{
 }
 .description-shoes .old-price{
     font-style: normal;
+    font-weight: 500;
     text-decoration: line-through;
-    color:grey;
+    color:rgb(184, 184, 184);
 }
 .discount{
     position: absolute;
@@ -348,4 +359,126 @@ h2{
     height: 1.8rem;
     font-size: 1.9rem;
     background-color: #000000;
+}
+.promo-slider{
+    position: relative;
+    display: grid;
+    overflow: hidden;
+    place-items: center;
+    width: 100%;
+    height: 69rem;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.21) 10.16%, rgba(0, 0, 0, 0.00) 100%), #8B5843;
+    box-shadow: 0px 5.493019104003906px 5.493019104003906px 0px rgba(0, 0, 0, 0.25);
+}
+.promo-slider .promo-title{
+    position:absolute;
+    top:4rem;
+    left: 10rem;
+    color: #FFF;
+    font-size: 13.1832rem;
+    font-weight: 100;
+}
+.promo-slider .back-image1{
+    position: absolute;
+    top:-6rem;
+    left: -11rem;
+    width: 60.4269rem;
+    height: 60.8352rem;
+    opacity: 5%;    
+}
+.promo-slider .back-image2{
+    position: absolute;
+    top:-5rem;
+    right: -28rem;
+    width: 114.6668rem;
+    height: 115.4416rem;
+    opacity: 83%; 
+}
+.promo-slider .shoes-slider{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10%;
+    width: 90%;
+    height: 60%;
+
+}
+.shoes-slider .glass-card{
+    width: 22.8rem;
+    height: 35.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 2.7465rem;
+    background: linear-gradient(147deg, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.10) 100%);
+    box-shadow: 0px 5.493019104003906px 5.493019104003906px 0px rgba(0, 0, 0, 0.30);
+    backdrop-filter: blur(27.465099334716797px);
+    /* border: 2.747px solid #CABD8F; */
+    border-width: 1px;
+    border-style: solid;
+    border-color: #FFFFFF #CABD8F #CABD8F #CABD8F;
+    transition: all .2s;
+
+}
+.shoes-slider .glass-card:hover{
+    transform: scale(1.1);
+    cursor: pointer; 
+}
+.glass-card img{
+    width: auto;
+    object-fit: cover;
+    height: 21.1481rem;
+    opacity: 100%;
+}
+.glass-card .model-name{
+    padding-top: 1.3rem;
+    color: #FFF;
+    font-size: 2.1972rem;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.2197rem;
+}
+.glass-card .model-sizes{
+    color: #FFF;
+    font-size: 2.1972rem;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    opacity: 50%; 
+    letter-spacing: 0.2197rem;
+}
+.glass-card .model-price{
+    padding-bottom: 1.3rem;
+    color: #FFF;
+    font-size: 2.8rem;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.28rem;
+}
+.last-deco{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    border-radius: 0rem 0rem 10.986rem 10.986rem;
+    background:  lightgray 50% / cover no-repeat;
+    margin-bottom: 20rem;
+    box-shadow:0px 5.493019104003906px 5.493019104003906px 0px rgba(0, 0, 0, 0.25);
+}
+.last-deco .deco-img{
+    height: 77.5889rem;
+    width: 100%;
+    border-radius: 0rem 0rem 10.986rem 10.986rem;
+}
+.last-deco .deco-logo{
+    position: absolute;
+    width: 30.5883rem;
+    height: auto;
 }
