@@ -10,7 +10,6 @@
 :root{
     --fontstack:'Bebas Neue','Made Canva';
 }
-
 body, html {
     height: 100%;
     margin: 0;
@@ -18,10 +17,10 @@ body, html {
     box-sizing: inherit;
     font-family: 'Poppins', sans-serif;
 }
-
 html {
-    /* overflow-x: hidden; */
     font-size: 62.5%;
+    width: 100%;
+    overflow-x: hidden;
 }
 .container-home{
     height: 100vh;
@@ -35,7 +34,7 @@ nav {
     width: 80%;
     height: 6%;
     justify-content: space-between;    
-    padding: 15px 10px;
+    padding: 1.5rem 1rem;
     position: sticky;
     background: linear-gradient(147deg, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.10) 100%);
     backdrop-filter: blur(18.688133239746094px);
@@ -74,29 +73,24 @@ nav {
     color:#ffffff;
     
 }
-
+.menu-btn{
+    display: none;
+}
 .search {
     display: flex;
     align-items: center;
     justify-items: start;
 }
 
-.search #myField {
-    display: none;
-    padding: 8px;
-    border: none;
-    border-radius: 4px;
-}
+
 .search img{
     width: 4rem;
 }
 
 .search button {
-
     background-color: transparent;
     border: none;
     cursor:pointer;
-    margin-left: 8px;
 }
 .cart {
     display: flex;
@@ -155,7 +149,7 @@ video {
     box-shadow: 0px 5.493019104003906px 5.493019104003906px 0px rgba(0, 0, 0, 0.25) inset;
 }
 .middle-flag img{
-    height:90px;
+    height:9rem;
     padding-right: 1rem;
     display: flex;
     align-items: center;
@@ -258,7 +252,7 @@ h2{
     box-shadow: none;
     transform: scale(1.1);
     
-} 
+}
 .shoes-grid{
     width: 90%;
     margin-bottom: 20rem;
@@ -270,12 +264,13 @@ h2{
     grid-template-columns: 1fr 1fr 1fr;
 } 
 .shoes{
-    position: relative;
+
     background-color: #ffffff;
     border: 2.747px solid rgba(0, 0, 0, 0.10);
     /* border-radius: 28px; */
     width: 100%;
-    height: 72rem; 
+    height: auto;
+    padding-bottom: 5rem; 
     transition: all .2s;   
 }
 .shoes:hover{
@@ -284,6 +279,9 @@ h2{
     border:none;
     width: 99%;
     transform: scale(1.1);
+}
+.shoes .img-container{
+    position: relative;
 }
 .shoes img{
     width: 100%;
@@ -320,7 +318,7 @@ h2{
 }
 .shop-cart{
     position: absolute;
-    bottom:11rem;
+    bottom:-4rem;
     right: 3rem;
     display: grid;
     place-items: center;
@@ -400,7 +398,6 @@ h2{
     margin-top: 10%;
     width: 90%;
     height: 60%;
-
 }
 .shoes-slider .glass-card{
     width: 22.8rem;
@@ -487,12 +484,12 @@ footer{
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.21) 10.16%, rgba(0, 0, 0, 0.00) 100%), #202020;
 }
 .final-info{
-    height: 58.89rem;
+    height: auto;
     padding: 2%;
     width: 96%;
     display: grid;
     gap:2rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .final-info img{
     padding-top: 3rem;
@@ -501,57 +498,57 @@ footer{
 }
 .final-info h4{
     color: #FFF;
-    font-size: 32.958px;
+    font-size: 3.2rem;
     font-family: Poppins;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 3.296px;
+    letter-spacing: 0.3rem;
 }
 .final-info ul{
     padding: 0;
 }
 .final-info li{
     color: #FFF;
-    font-size: 21.972px;
+    font-size: 2rem;
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    letter-spacing: 2.197px;
+    letter-spacing: 0.2rem;
     padding-bottom: 5rem;
     list-style: none;
     cursor: pointer;
 }
 .Newsletter p{
     color: #FFF;
-    font-size: 21.972px;
+    font-size: 2rem;
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    letter-spacing: 2.197px;
+    letter-spacing: 0.2rem;
 }
 .Newsletter #email-Field {
-    display: block;
-    padding: 8px;
-    width: 410.603px;
-    height: 87.888px;
+    display: flex;
+    padding: 0.8rem;
+    width: 41rem;
+    height: 8.7rem;
     border: none;
     border-radius: 4px;
-    border-radius: 13.733px;
+    border-radius: 1.3rem;
     background: #4E4E4E;
     color: #FFF;
-    font-size: 21.972px;
+    font-size: 2.1rem;
     box-shadow: 0px 5.493019104003906px 5.493019104003906px 0px rgba(0, 0, 0, 0.25) inset;
 }
 #email-Field::placeholder{
     color: #FFF;
-    font-size: 21.972px;
+    font-size: 2.1rem;
     font-family: Poppins;
     font-weight: 500;
     line-height: normal;
-    letter-spacing: 2.197px;
+    letter-spacing: 0.2rem;
 }
 .socialmedia-logos{
     display: flex;
@@ -562,4 +559,179 @@ footer{
     width: 10.2994rem;
     height: 10.2994rem;
     cursor: pointer;
+}
+@media (max-width: 1650px){
+    html{
+        font-size: 55%;
+    }
+}
+@media (max-width: 1450px){
+    html{
+        font-size: 50%;
+    }
+}
+@media (max-width: 1290px){
+    .menu li{padding-right: 1rem;}
+    .card-typeshoes .name-typeshoes {
+        font-size: 2.5rem;}
+    .shoes-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 923px){
+    nav {width: auto;
+        top: 3%;
+        padding: 0.5rem 0.5rem;}
+    .menu li{padding-right: 0rem;
+            font-size: 2rem;}
+    .search img{
+        width: 3.5rem;
+        }
+    .video-container {
+        height: 85%;}
+    .talles ul li{
+        width: 8rem;
+}
+.promo-slider .promo-title {
+    top: 2rem;
+    left: 1rem;
+    font-size: 9rem;
+}
+.shoes-slider .glass-card:nth-last-child(1){
+    display: none;
+}
+.final-info {
+    /* align-items: center; */
+    height: auto;
+    width: 96%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.final-info li{
+    padding-bottom: 1rem;
+}
+.Newsletter{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+.Newsletter #email-Field {
+    width: 70%;
+}
+.socialmedia-logos{
+    padding-right: 0;
+    justify-content: space-evenly;
+}
+.socialmedia-logos img{
+    padding-right: 3rem;
+
+}
+}
+@media (max-width: 700px){
+.video-container{
+        height:100%;
+        width: 100%;
+        border-radius: 0;        
+    }
+video {
+    border: none;
+    border-radius:0;
+}
+nav .menu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0px 0px 0px 0px;
+    top: 0;
+    left: 0;
+    height: 90%;
+    width: 100%;
+    min-width: 200px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 #7062d3;
+    border-radius: 0px 0px 10px 0px;
+    transform: translateY(-92vh);
+}
+nav {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 90%;
+    height: 6%;
+    justify-content: space-between;    
+    padding: 0;
+    position: sticky;
+    background: none;
+    backdrop-filter: none;
+    border: none;
+    top: 3%;
+    z-index: 1;
+}
+.search{
+    display: none;
+}
+.cart img{
+    height: 6rem;
+}
+.menu-btn{
+    display: block;
+    font-size: 6rem;
+    color: #FFFFFF;
+}
+.logo-container {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.talles{
+    display: none;
+}
+.models {
+    align-items: center;
+}
+.shoes-grid {
+    margin-top: 5rem;
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    place-content: center;
+}
+.middle-flag{
+    height: 15rem;
+    width: 100%;
+}
+.middle-flag img{
+    height: 6rem;
+}
+.shoes-slider .glass-card:nth-last-child(2){
+    display: none;
+}
+.final-info{
+    flex-direction: column-reverse;
+}
+} 
+@media (max-width: 500px){
+    .promo-slider .promo-title {
+        top: 2rem;
+        left: 1rem;
+        font-size: 8rem;
+    } 
+    .shoes-slider .glass-card:nth-last-child(3){
+        display: none;
+    }
+    .shop-cart {right: 1.5rem;}
+    .last-deco .deco-logo {
+        width: 20rem;
+    }
+
 }
