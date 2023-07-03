@@ -15,6 +15,7 @@ body, html {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+    scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
 html {
@@ -560,6 +561,17 @@ footer{
     height: 10.2994rem;
     cursor: pointer;
 }
+.followus{
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: 100;
+    letter-spacing: 0.3rem;
+    padding-top:2rem ;
+
+}
+.btn-shopnow{
+    display: none;
+}
 @media (max-width: 1650px){
     html{
         font-size: 55%;
@@ -614,7 +626,7 @@ footer{
 .Newsletter{
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
 }
 .Newsletter #email-Field {
@@ -625,8 +637,7 @@ footer{
     justify-content: space-evenly;
 }
 .socialmedia-logos img{
-    padding-right: 3rem;
-
+    padding-right: 2rem;
 }
 }
 @media (max-width: 700px){
@@ -679,12 +690,36 @@ nav {
     display: none;
 }
 .cart img{
-    height: 6rem;
+    height: 5rem;
 }
 .menu-btn{
     display: block;
-    font-size: 6rem;
+    font-size: 5rem;
     color: #FFFFFF;
+    padding-left: 1rem;
+}
+.btn-shopnow{
+    height: 6.4rem;
+    width: 80%;
+    position: absolute;
+    bottom: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.2351rem;
+    font-family: Montserrat;
+    background: linear-gradient(147deg, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.10) 100%);
+    backdrop-filter: blur(5px);
+    border-width: 0.8rem;
+    border-style: solid;
+    border-color: #ffffff85 #ffffff00 #ffffff63 #ffffff9a;
+    transition: all .6s;
+
 }
 .logo-container {
     display: flex;
@@ -707,31 +742,78 @@ nav {
     place-content: center;
 }
 .middle-flag{
-    height: 15rem;
+    height: 12rem;
     width: 100%;
 }
 .middle-flag img{
-    height: 6rem;
+    height: 4rem;
 }
 .shoes-slider .glass-card:nth-last-child(2){
     display: none;
 }
 .final-info{
     flex-direction: column-reverse;
-}
+    align-items: center;
+    text-align: center;
 } 
 @media (max-width: 500px){
-    .promo-slider .promo-title {
-        top: 2rem;
-        left: 1rem;
-        font-size: 8rem;
-    } 
-    .shoes-slider .glass-card:nth-last-child(3){
-        display: none;
-    }
-    .shop-cart {right: 1.5rem;}
-    .last-deco .deco-logo {
-        width: 20rem;
-    }
-
+.middle-flag{
+    height: 8rem;
+    width: 100%;
 }
+.middle-flag img {
+    height: 3rem;
+}
+.description-shoes {
+    font-size: 2.2958rem;
+}
+.promo-slider .promo-title {
+    top: 2rem;
+    left: 1rem;
+    font-size: 8rem;
+}
+.promo-slider .back-image2 {
+    opacity: 30%;
+} 
+.shoes-slider .glass-card:nth-last-child(3){
+    display: none;
+}
+.shop-cart {right: 1.5rem;}
+.last-deco .deco-logo {
+    width: 11rem;
+}
+.last-deco .deco-img {
+    height: 25rem;
+    border-radius: 0rem 0rem 2rem 2rem;
+}
+.Newsletter {
+    align-items: center;
+}
+.final-info h4 {
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+.final-info li {
+    padding-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+.Newsletter p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    text-align: center;
+}
+.Newsletter #email-Field {
+    width: 90%;
+    height: 6rem;
+}
+.final-info h4 {
+    font-size: 3.2rem;
+    font-weight: 350;
+    letter-spacing: 0.3rem;
+}
+.final-info .logo-Footter {
+display: none;
+}
+
+}}
