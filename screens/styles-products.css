@@ -16,7 +16,7 @@ body{
 }
 header{
     background: linear-gradient(180deg, #CABDB5 0%, rgba(202, 189, 181, 0.00) 100%);
-    height: 20vh;
+    height: 20%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -27,7 +27,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80%;
+    height: 85%;
     margin-bottom: 3%;
 }
 nav {
@@ -126,7 +126,7 @@ nav {
 .execution-products{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     width: 45rem;
     height: 70.9rem;
     margin-left: 3rem;
@@ -166,7 +166,7 @@ p{
     color: #000;
     text-align: left;
     font-family: Poppins;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -323,8 +323,6 @@ h2{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-
 }
 .white-flag .wsp-contact {
     width: 45rem;
@@ -334,6 +332,9 @@ h2{
 .white-flag .wsp-contact img{
     width: 69px;
     height: 69px;
+}
+.white-flag .wsp-contact p{
+    padding-left: 2rem;
 }
 .notify{
     width: 626px;
