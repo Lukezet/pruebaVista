@@ -28,7 +28,7 @@ nav {
     position: sticky;
     background: linear-gradient(147deg, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.10) 100%);
     backdrop-filter: blur(18.688133239746094px);
-    border: 0.4rem solid #242424;
+    border: 0.4rem solid #ffffff;
     top: 5%;
     /* margin-top: 5rem; */
     z-index: 1;
@@ -247,6 +247,9 @@ h2{
     transform: scale(1.1);
     
 }
+
+/*GRILLA ESTRUCTURA*/
+
 .shoes-grid{
     width: 90%;
     margin-bottom: 20rem;
@@ -257,6 +260,9 @@ h2{
     gap: 5rem;
     grid-template-columns: 1fr 1fr 1fr;
 } 
+
+/*TARJETA DE CALZADOS HASTA .plus*/
+
 .shoes{
 
     background-color: #ffffff;
@@ -286,7 +292,7 @@ h2{
     font-size: 3.2958rem;
     margin-left: 2rem;
 }
-.description-shoes em{
+.description-shoes{
     font-style: normal;
     font-weight: 600;
 }
