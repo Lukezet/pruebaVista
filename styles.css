@@ -28,7 +28,7 @@ nav {
     position: sticky;
     background: linear-gradient(147deg, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.10) 100%);
     backdrop-filter: blur(18.688133239746094px);
-    border: 0.4rem solid #242424;
+    border: 0.4rem solid #ffffff;
     top: 5%;
     /* margin-top: 5rem; */
     z-index: 1;
