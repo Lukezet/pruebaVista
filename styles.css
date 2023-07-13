@@ -21,10 +21,10 @@ html {
 }
 nav {
     display: flex;
-    width: 80%;
+    width: 81.6%;
     height: 6%;
     justify-content: space-between;    
-    padding: 1.5rem 1rem;
+    padding: 1% 1.5%;
     position: sticky;
     background: linear-gradient(147deg, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.10) 100%);
     backdrop-filter: blur(18.688133239746094px);
@@ -42,12 +42,16 @@ nav {
 .brand-name img {
     height: 6rem;
     color: #ffffff;
+    margin-top: 1rem;
 }
 
 .menu {
     align-items: center;
     list-style: none;
     padding: 0;
+    padding: 0;
+    width: 70%;
+    justify-content: space-evenly;
     display: flex;
 }
 
@@ -56,7 +60,6 @@ nav {
     font-weight:300;
     font-size: 2.4rem;
     margin-inline: 1rem;
-    padding-right: 4rem;
 }
 
 .menu li a {
@@ -590,9 +593,9 @@ footer{
     }
 }
 @media (max-width: 923px){
-    nav {width: auto;
+    nav {width: 83%;
         top: 3%;
-        padding: 0.5rem 0.5rem;}
+        padding: 0.8% 1%;}
     .menu li{padding-right: 0rem;
             font-size: 2rem;}
     .search img{
@@ -785,6 +788,7 @@ nav .menu{
     align-items: center;
     text-align: center;
 } 
+}
 @media (max-width: 500px){
 .middle-flag{
     height: 8rem;
@@ -887,4 +891,4 @@ border-width: 2px;
 display: none;
 }
 
-}}
+}
