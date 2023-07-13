@@ -172,6 +172,9 @@ nav {
     line-height: normal;
     letter-spacing: 0.16rem;
 }
+.description-2{
+    display: none;
+}
 .add-cart{
     color: #ffffff;
     border-radius: 0.2rem;
@@ -595,12 +598,44 @@ footer{
         grid-template-columns: 1fr 1fr;
     }
 }
-@media (max-width: 923px){
+@media (max-width: 930px){
     nav {width: 83%;
         top: 3%;
-        padding: 0.8% 1%;}
-    .menu li{padding-right: 0rem;
-        font-size: 2rem;}
+        padding: 0.8% 1%;
+    }  
+    main{
+        flex-direction: column;
+    }
+    .menu li{
+        padding-right: 0rem;
+        font-size: 2rem;
+    }
+    .execution-products{
+        align-items: center;
+        margin-left: 0;
+        width: 90%;
+        margin-top: 5rem;
+    }  
+    .select-size{
+        width: 95%;
+    }
+    .select-size ul li {
+        width: 8rem;
+        height: 8rem;
+        font-size: 2.2rem;}
+    .add-cart{
+            width: 85%;
+        }
+    .white-flag{
+        height: 15rem;
+        width: 80%;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .notify {
+        width: auto;
+        font-size: 1.6rem;
+    }
     .search img{
         width: 3.5rem;
         }
@@ -727,6 +762,31 @@ footer{
         padding-left: 1rem;
         z-index: 3;
     }
+    .select-size ul li {
+        width: 6rem;
+        height: 6rem;
+        font-size: 1.6;
+    }
+    .add-cart{
+        width: 95%;
+    }
+    h2{
+        display: none;
+    }
+    .description{
+        display: none;
+    }
+    .description-2{
+        display: block;
+        color: #000;
+        text-align: left;
+        font-family: Poppins;
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.16rem;
+    }
     .Carrousel-similarProducts {
         overflow: hidden;}
     .final-info{
@@ -736,6 +796,11 @@ footer{
     } 
 }
 @media (max-width: 500px){
+    .select-size ul li{
+        width: 4.7rem;
+        height: 4.7rem;
+        font-size: 1.2rem;
+    }
     .Newsletter {
         align-items: center;
     }
