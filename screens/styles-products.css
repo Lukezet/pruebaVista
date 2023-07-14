@@ -579,6 +579,9 @@ footer{
     padding-top:2rem ;
 
 }
+.brand-name2{
+    display: none;
+}
 
 @media (max-width: 1650px){
     html{
@@ -712,6 +715,29 @@ footer{
         height: 0;
         margin-bottom: 0;
     }
+    .nav-mobile{
+    position: fixed;
+    top: 1.2%;
+    height: 5rem;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    background: linear-gradient(147deg, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.10) 100%);
+    backdrop-filter: blur(10px);
+    border-width: 0.7rem;
+    border-style: solid;
+    border-color:#a0a0a052; /*#ffffff85;*/
+    z-index: 3;
+    }
+    .brand-name2{
+    display: block;
+    position: absolute;
+    }
+    .brand-name2 img{
+    width: 16rem;
+    height: 5.5rem;
+    }
     main{
         flex-direction: column;
     }
@@ -780,25 +806,24 @@ footer{
     }
     .cart2{
         position: absolute;
-        top: 2rem;
+        top: -1rem;
         right: 2rem;
-        height: 5rem;
         z-index: 3;
         align-self: end;
         display: block;
     }
     .cart2 img{
-        height: 6rem;
+        height: 4rem;
     }
     .menu-btn{
         position: absolute;
-        top: 2rem;
+        top: 0.5rem;
         left: 2rem;
         height: 5rem;
         display: block;
         align-self: start;
-        font-size: 5rem;
-        color: #FFFFFF;
+        font-size: 3rem;
+        color: #242424;
         padding-left: 1rem;
         z-index: 3;
     }
